@@ -112,7 +112,18 @@ h2 {
   padding: 25px;
   width: 350px;
   margin: 0 10px;
-  background: linear-gradient(to bottom, #c1b3c7, #14c0c0);
+}
+
+.sk1 {
+  background: linear-gradient(245deg, rgba(2,0,36,1) 0%, rgba(121,74,9,1) 0%, rgba(255,250,0,1) 58%);
+}
+
+.sk2 {
+  background: linear-gradient(166deg, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 0%, rgba(255,195,0,1) 58%);
+}
+
+.sk3 {
+  background: linear-gradient(326deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 67%);
 }
 
 .fa-brands {
@@ -140,11 +151,18 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(to bottom,#14c0c0, #4a3852);
   border-radius: 15px;
   padding: 25px;
   width: 600px;
   margin: 0 10px;
+}
+
+.proj1{
+  background: linear-gradient(to right,#c94b4b, #4b134f);
+}
+
+.proj2 {
+  background: linear-gradient(to right,#355C7D, #6C5B7B, #C06C84);
 }
 
 .project h4 {
@@ -157,4 +175,22 @@ font-style: oblique;
 img {
   width: 100%;
   border-radius: 12px;
+}
+
+/* Footer Section */
+.line {
+  width: 85%;
+  border-bottom: 1px solid rgb(153, 149, 149);
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.footer-container {
+  padding: 120px;
+  text-align: center;
+  background: linear-gradient(to bottom,whitesmoke, #909097);
+}
+
+.footer-icons {
+  font-size: 30px;
 }
