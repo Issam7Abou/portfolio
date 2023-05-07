@@ -6,42 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
 </head>
 <body>
     <!-- Navigation Bar -->
     <div class="nav-container">
         <nav>
-            <div class="left-item">Issam Abou</div>
+            <div class="title">Issam Abou</div>
             <div class="right-items">
-              <a href="#">About Me</a>
-              <a href="#">Skills</a>
-              <a href="#">Projects</a>
+              <a href="#abou-me">About Me</a>
+              <a href="#skill">Skills</a>
+              <a href="#project">Projects</a>
               <a href="#">Contact</a>
             </div>
           </nav>
     </div>
     <!-- About me Section -->
-    <div id="about-container">
-        <h1>Issam Abou</h2>
-        <h3>Front-End Developer</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquam officia autem itaque sequi. Minus iusto distinctio delectus velit corporis facilis repellendus deleniti iure quos maxime, cupiditate pariatur nam ut.
-        Natus eos nam consequuntur ipsam corrupti veniam nulla. Ex, aliquam corporis dicta enim, vero in facilis distinctio eveniet explicabo minus aliquid totam dolore esse maiores doloremque numquam! Cupiditate, enim voluptatum!</p>
+    <div class="about-container" id="abou-me">
+        <div class="about-me">
+            <h1>Hey! I'm Issam Abou 👋</h2>
+            <h3>Front-End Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquam officia autem itaque sequi. Minus iusto distinctio delectus velit corporis facilis repellendus deleniti iure quos maxime, cupiditate pariatur nam ut.
+            Natus eos nam consequuntur ipsam corrupti veniam nulla. Ex, aliquam corporis dicta enim, vero in facilis distinctio eveniet explicabo minus aliquid totam dolore esse maiores doloremque numquam! Cupiditate, enim voluptatum!</p>
+        </div>
     </div>
     <!-- Skills -->
-    <div id="skill-container">
-        <div class="skill">
-
+    <h2>My Skills so far....</h2>
+    <div class="skill-container" id="skill">
+        <div class="skill sk1">
+            <i class="fa-brands fa-square-js"></i>
+            <h4>JavaScript</h4>
+            <p>I learned JavaScript through a combination of reading books, working on coding challenges, and completing numerous exercises. I approach coding with a professional mindset, always striving to write clean and efficient code. My experience with JavaScript has allowed me to build dynamic and interactive user interfaces with HTML and CSS. I am excited to continue growing my skills and exploring new technologies in the world of web development.</p>
         </div>
-        <div class="skill">
-
+        <div class="skill sk2">
+            <i class="fa-brands fa-html5"></i>
+            <h4>HTML</h4>
+            <p> I have worked on numerous projects where I was responsible for creating and maintaining the HTML structure of web pages, ensuring they were optimized for search engines and accessible to all users. I have experience with modern HTML5 features such as semantic markup, multimedia, and web forms. My ability to write clean, well-structured HTML code has helped me create efficient and maintainable web pages.</p>
         </div>
-        <div class="skill">
-
-        </div>
-        <div class="skill">
-
+        <div class="skill sk3">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h4>CSS</h4>
+            <p>I have worked on several projects where I was responsible for creating and styling the user interface, making sure it is both aesthetically pleasing and functional. I have experience with modern CSS frameworks such as Bootstrap and Materialize, as well as pre-processors like Sass and Less. My ability to use CSS to create responsive layouts and animations has helped me create engaging user experiences.</p>
         </div>
     </div>
+    <!-- Projects -->
+    <h2>My Projects</h2>
+    <div class="projects-container" id="project">
+        <div class="project proj1">
+            <h4>Generator of Quotes</h4>
+            <a href="https://issam7abou.github.io/generator_of_quotes/">
+                <img src="./pictures/quote-generator.png" alt="Quote Generator">
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus quas soluta veritatis repellendus odit ex a optio deleniti debitis neque dignissimos ipsa impedit, hic, cum voluptas expedita! Mollitia, ipsum illum!</p>
+        </div>
+        <div class="project proj2">
+            <h4>Audio Player</h4>
+            <a href="https://issam7abou.github.io/modern-audio-player/">
+                <img src="./pictures/audio-player.png" alt="Audio Player">
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit cum dolore consequuntur velit mollitia eos sapiente sed aliquam optio doloremque, reprehenderit qui deleniti architecto esse inventore quo nemo! Veritatis, repellendus!</p>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer-container">
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/"><i class="fab fa-github"></i></a>
+            <a href="mailto:yourname@example.com"><i class="fas fa-envelope"></i></a>
+          </div>
+          <div class="footer-text">
+            
+            <p>&copy; 2023 <a href=""></a>Issam Abou</a></p>
+          </div>
+    </footer>
     <!-- Script -->
     <script src="script.js"></script>
 </body>

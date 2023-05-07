@@ -5,26 +5,156 @@
     margin: 0;
     padding: 0;
   }
+
+html {
+  scroll-behavior: smooth;
+  background: whitesmoke;
+}
   
   /* Global styles */
-  body {
-    font-family: Kanit, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-  }
+body {
+  font-family: Kanit, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
 
-  .nav-container {
-    background-color: rgb(255, 255, 255);
-    padding: 25px;
+  /* Navbar styles */
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: whitesmoke;
+  padding: 40px;
+}
 
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
   
-  .right-items a {
-    margin-left: 90px;
+.title {
+  font-size: 30px;
+  color: rgb(22, 194, 194);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(112, 108, 108);
+  padding: 10px;
+}
+
+nav a:hover {
+  color: rgb(22, 194, 194);
+  border-bottom: 2px solid rgb(22, 194, 194);
+  color: rgb(22, 194, 194);
+}
+
+  /* About me Section styles */
+.about-container {
+  background-color: whitesmoke;
+}
+
+.about-me {
+margin-top: 10%;
+text-align: center;
+padding: 25px;
+margin-left: 275px;
+margin-right: 275px;
+animation: slide-in-left 0.5s ease-out;
+opacity: 100%;
+}
+
+/* Animation About me Section */
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
+  100% {
+    transform: translateX(0);
+    opacity: 75%;
+  }
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 22px;
+  color: #14c0c0;
+  margin-bottom: 10px;
+}
+
+/* Skill Section */
+.skill-container {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 42px;
+  margin-top: 200px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 25px;
+  width: 350px;
+  margin: 0 10px;
+  background: linear-gradient(to bottom, #c1b3c7, #14c0c0);
+}
+
+.fa-brands {
+  font-size: 70px;
+}
+
+.skill h4 {
+  font-size: 22px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* Projects Section */
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to bottom,#14c0c0, #4a3852);
+  border-radius: 15px;
+  padding: 25px;
+  width: 600px;
+  margin: 0 10px;
+}
+
+.project h4 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+font-style: oblique;
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+}
