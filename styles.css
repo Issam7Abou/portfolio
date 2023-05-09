@@ -167,18 +167,19 @@ p {
 
 .project img {
   transition: transform 0.3s ease-in-out;
+  background-size: 100%;
 }
 
 .project img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .proj1{
-  background: linear-gradient(to right,#c94b4b, #4b134f);
+  background: radial-gradient(circle, rgba(249,185,213,1) 0%, rgba(179,209,245,1) 100%);
 }
 
 .proj2 {
-  background: linear-gradient(to right,#355C7D, #6C5B7B, #C06C84);
+  background: radial-gradient(circle, rgba(249,185,213,1) 0%, rgba(179,209,245,1) 100%);
 }
 
 .project h4 {
@@ -214,21 +215,23 @@ input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
+  border-radius: 8px;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #14c0c0;
+  color: whitesmoke;
   padding: 12px 20px;
   border: none;
+  border-radius: 8px;
   cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #13a1a1;
 }
 
 /* Style the container/contact section */
@@ -242,7 +245,7 @@ input[type=submit]:hover {
 .column {
   float: left;
   width: 50%;
-  margin-top: 6px;
+  margin-top: 8px;
   padding: 20px;
 }
 
