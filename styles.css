@@ -52,8 +52,10 @@ nav a:hover {
   color: rgb(22, 194, 194);
 }
 
-  /* About me Section styles */
+/* About me Section styles */
 .about-container {
+  display: flex;
+  justify-content: center;
   background-color: whitesmoke;
 }
 
@@ -61,8 +63,7 @@ nav a:hover {
 margin-top: 10%;
 text-align: center;
 padding: 25px;
-margin-left: 275px;
-margin-right: 275px;
+width: 65%;
 animation: slide-in-left 0.5s ease-out;
 opacity: 100%;
 }
@@ -122,15 +123,15 @@ h2 {
 }
 
 .sk1 {
-  background: linear-gradient(245deg, rgba(2,0,36,1) 0%, rgba(121,74,9,1) 0%, rgba(255,250,0,1) 58%);
+  background: radial-gradient(circle, rgba(191,255,213,1) 0%, rgba(247,209,255,1) 100%);
 }
 
 .sk2 {
-  background: linear-gradient(166deg, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 0%, rgba(255,195,0,1) 58%);
+  background: radial-gradient(circle, rgba(191,255,213,1) 0%, rgba(247,209,255,1) 100%);
 }
 
 .sk3 {
-  background: linear-gradient(326deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 67%);
+  background: radial-gradient(circle, rgba(191,255,213,1) 0%, rgba(247,209,255,1) 100%);
 }
 
 .fa-brands {
@@ -175,7 +176,7 @@ p {
 }
 
 .proj1{
-  background: radial-gradient(circle, rgba(249,185,213,1) 0%, rgba(179,209,245,1) 100%);
+  background: radial-gradient(circle, rgba(249,185,213,1) 0%, rgba(179,209,245,1) 100%); 
 }
 
 .proj2 {
@@ -192,22 +193,6 @@ font-style: oblique;
 img {
   width: 100%;
   border-radius: 12px;
-}
-
-/* Footer Section */
-.line {
-  width: 90%;
-  border-bottom: 1px solid rgb(194, 189, 189);
-  margin: 0 auto;
-  margin-top: 100px;
-}
-
-.footer-container {
-  text-align: center;
-}
-
-.footer-icons {
-  font-size: 25px;
 }
 
 /* Contact me Styles */
@@ -254,4 +239,87 @@ input[type=submit]:hover {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Footer Section */
+.line {
+  width: 90%;
+  border-bottom: 1px solid rgb(194, 189, 189);
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.footer-icons {
+  font-size: 25px;
+}
+
+/* Media Queries */
+/* Smartphones smaller than 767px */
+@media only screen and (max-width: 650px) {
+  p {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 32px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+  /* NavBar */
+  .nav-container {
+    padding: 10px;
+    z-index: 10;
+  }
+  .title {
+    display: block;
+    font-size: 20px;
+  } 
+  a {
+    padding: 5px;
+  }
+  /* About me Section */
+  .about-me {
+    margin-top: 10%;
+    padding: 20px;
+    width: 90%;
+  }
+  /* Projects Section */
+  .skill-container {
+    flex-wrap: wrap;
+    text-align: justify;
+  } 
+  .skill {
+    margin-bottom: 20px;
+  } 
+  .fa-brands {
+    font-size: 50px;
+  }
+  .skill h4 {
+    font-size: 20px;
+  }
+  /* Projects Section */
+  .projects-container {
+    flex-wrap: wrap;
+  }
+  .project {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .project h4 {
+    font-size: 25px;
+  }
+  /* Contact me Section */
+  .column img {
+    display: none;
+  }
+  .column {
+    float: none;
+    width: 100%;
+  }
+  .row {
+    margin-top: 0;
+  }
 }
