@@ -196,7 +196,7 @@ img {
 }
 
 /* Contact me Styles */
-input[type=text], select, textarea {
+input[type=text],input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -206,7 +206,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+button[type=submit] {
   background-color: #14c0c0;
   color: whitesmoke;
   padding: 12px 20px;
@@ -215,7 +215,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+button[type=submit]:hover {
   background-color: #13a1a1;
 }
 
