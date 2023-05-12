@@ -163,7 +163,6 @@ p {
   padding: 25px;
   width: 600px;
   margin: 0 10px;
-  cursor: pointer;
 }
 
 .project img {
@@ -183,11 +182,17 @@ p {
   background: radial-gradient(circle, rgba(249,185,213,1) 0%, rgba(179,209,245,1) 100%);
 }
 
+ul {
+  padding-left: 20px;
+}
+
+p, ul {
+  font-size: 17px;
+}
+
 .project h4 {
   font-size: 30px;
-  text-align: center;
   font-weight: normal;
-font-style: oblique;
 }
 
 img {
@@ -195,7 +200,19 @@ img {
   border-radius: 12px;
 }
 
+.btn-container {
+  margin-top: 18px;
+}
+
+.button {
+  background: #2e2c2c;
+  color: #14c0c0;
+  border-radius: 8px;
+  padding: 10px;
+}
+
 /* Contact me Styles */
+/*
 input[type=text],input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
@@ -219,14 +236,12 @@ button[type=submit]:hover {
   background-color: #13a1a1;
 }
 
-/* Style the container/contact section */
 .container {
   border-radius: 5px;
   background-color: whitesmoke;
   padding: 10px;
 }
 
-/* Create two columns that float next to eachother */
 .column {
   float: left;
   width: 50%;
@@ -234,12 +249,12 @@ button[type=submit]:hover {
   padding: 20px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
+*/ 
 
 /* Quote Section */
 .quote-container {
