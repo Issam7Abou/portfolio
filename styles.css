@@ -241,6 +241,27 @@ button[type=submit]:hover {
   clear: both;
 }
 
+/* Quote Section */
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.quote {
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.author {
+  font-size: 20px;
+  margin-top: 10px;
+  font-style: italic;
+  color: #14c0c0;
+}
+
 /* Footer Section */
 .line {
   width: 90%;
@@ -323,3 +344,13 @@ button[type=submit]:hover {
     margin-top: 0;
   }
 }
+
+/* Small Smartphones */
+@media only screen and (max-width: 400px) {
+  .nav-container {
+    font-size: 0.9rem;
+    padding: 3px;
+    z-index: 10;
+  }
+}
+
