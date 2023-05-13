@@ -211,6 +211,11 @@ img {
   padding: 10px;
 }
 
+.button:hover {
+  background: #14c0c0;
+  color: black;
+}
+
 /* Contact me Styles */
 /*
 input[type=text],input[type=email], select, textarea {
