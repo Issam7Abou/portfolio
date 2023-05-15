@@ -20,7 +20,7 @@ body {
 
   /* Navbar styles */
 .nav-container {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -305,10 +305,12 @@ button[type=submit]:hover {
   border-bottom: 1px solid rgb(194, 189, 189);
   margin: 0 auto;
   margin-top: 100px;
+  margin-bottom: 30px;
 }
 
 .footer-container {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .footer-icons {
